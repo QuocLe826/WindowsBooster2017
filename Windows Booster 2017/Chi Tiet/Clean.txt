@@ -1,0 +1,44 @@
+-TempFolder = Environment.ExpandEnvironmentVariables("%TEMP%");
+-Temporary_Internet_Files = Environment.GetFolderPath(Environment.SpecialFolder.InternetCache);
+-TempWindows = Environment.ExpandEnvironmentVariables("%SYSTEMROOT%\\Temp");
+-Prefetch = Environment.ExpandEnvironmentVariables("%SYSTEMROOT%\\Prefetch");
+-Recent = Environment.ExpandEnvironmentVariables("%USERPROFILE%\\AppData\\Roaming\\Microsoft\\Windows\\Recent");
+-Cookies = Environment.GetFolderPath(Environment.SpecialFolder.Cookies);
+-InternetHistory = Environment.GetFolderPath(Environment.SpecialFolder.History);
+-Empty Recycle Bin
+  	enum RecycleFlags : uint
+        {
+            SHRB_NOCONFIRMATION = 0x00000001,
+            SHRB_NOPROGRESSUI = 0x00000002,
+            SHRB_NOSOUND = 0x00000004
+        }
+        [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
+        static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath, RecycleFlags dwFlags);
+
+public static void EmptyFolderContents(string foldername)
+        {
+
+            foreach (var folder in Directory.GetDirectories(foldername))
+            {
+                try
+                {
+                    Directory.Delete(folder, true);
+                }
+                catch (Exception excep)
+                {
+                    System.Diagnostics.Debug.WriteLine(excep);
+                }
+            }
+
+            foreach (var file in Directory.GetFiles(foldername))
+            {
+                try
+                {
+                    File.Delete(file);
+                }
+                catch (Exception excep)
+                {
+                    System.Diagnostics.Debug.WriteLine(excep);
+                }
+            }
+        }

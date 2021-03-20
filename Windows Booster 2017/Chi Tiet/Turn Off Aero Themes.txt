@@ -1,0 +1,5 @@
+public void Turn_Off_Aero_Themes()
+        {
+            Process.Start("sc.exe", "stop UxSms");
+            Process.Start("sc.exe", "config UxSms" start= disabled");
+        }

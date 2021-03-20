@@ -1,0 +1,4 @@
+document.cookie='geoCC=VN;path=/;max-age=14400';
+if (window.ZiffIntl) { ZiffIntl.setGeoCC('VN'); }
+if (window.NSGPT) { NSGPT.setGeoCC('VN'); }
+if (window.ICMS) { ICMS.setGeoCC('VN'); }

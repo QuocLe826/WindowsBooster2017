@@ -1,0 +1,929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0094)http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">  <meta http-equiv="Content-Script-Type" content="text/javascript"> <title>Working With The Windows Recycle Bin With C# - C# Tutorials | Dream.In.Code</title>
+<meta name="keywords" content="Working,Windows,Recycle,Bin,Recently,needed,interact,utilities,application,Ive,asked,create,client">
+<meta name="description" content="Working with the Windows Recycle Bin with C#: ">
+<meta name="identifier-url" content="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/">
+<link rel="canonical" href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/?s=02c2cb090c5eaeb412a45461bf3453f8">
+<link rel="up" href="http://www.dreamincode.net/forums/forum/85-c%23-tutorials/?s=02c2cb090c5eaeb412a45461bf3453f8">
+<link rel="author" href="http://www.dreamincode.net/forums/user/40184-psychocoder/?s=02c2cb090c5eaeb412a45461bf3453f8">
+<link rel="alternate feed" type="application/rss+xml" title="Programming Forums" href="http://www.dreamincode.net/forums/rss/forums/1-programming-forums/">
+<link rel="alternate feed" type="application/rss+xml" title="Dream.In.Code Blogs RSS feed" href="http://www.dreamincode.net/forums/rss/blog/">
+<link rel="stylesheet" type="text/css" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/awards.css">
+<link rel="stylesheet" type="text/css" title="Main" media="screen" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/calendar_select.css">
+<link rel="stylesheet" type="text/css" media="print" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ipb_print.css">
+<link rel="stylesheet" type="text/css" title="Main" media="screen" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ipb_editor.css">
+<link rel="stylesheet" type="text/css" title="Main" media="screen" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ipb_styles.css">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.dreamincode.net/home/favicon.ico">
+<link rel="alternate" title="dream.in.code Forums" href="http://www.dreamincode.net/rss/featured.php" type="application/rss+xml">
+<link type="text/css" rel="stylesheet" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/styles_7.css">
+<link rel="stylesheet" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/google_cse.css" type="text/css">
+<link rel="stylesheet" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/thickbox.css" type="text/css">
+<meta property="fb:page_id" content="62219401412">
+
+<script async="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/config250.js.t&#7843;i xu&#7889;ng"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/rules-p-d4Szpdj6xMw-o.js.t&#7843;i xu&#7889;ng"></script><script async="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/analytics.js.t&#7843;i xu&#7889;ng"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/cb=gapi.loaded_1" async=""></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/plusone.js.t&#7843;i xu&#7889;ng" gapi_processed="true"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/osd.js.t&#7843;i xu&#7889;ng"></script><script async="" data-jsonpid="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/nlsSDK600.bundle.min.js.t&#7843;i xu&#7889;ng"></script><script async="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/config250.js(1).t&#7843;i xu&#7889;ng"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ads"></script><script type="text/javascript" async="" id="nsgpt-ldr-_native_sharethrough_com_assets_tag_js" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/tag.js.t&#7843;i xu&#7889;ng" data-str-disable-tracking="true"></script><script type="text/javascript" async="" id="ns-bts-g" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/gpt.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript" async="" id="ns-bts-zdbb" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/nsgpt.jsonp"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/v60.js.t&#7843;i xu&#7889;ng"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/bk-coretag.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript" async="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/zd-core.min.js.t&#7843;i xu&#7889;ng" id="zdcore-js" data-analytics-domain="a.zdbb.net" data-analytics-account="netshelter:dreamincode.net"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/analytics.js(1).t&#7843;i xu&#7889;ng" async="true"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ad-test.js.t&#7843;i xu&#7889;ng" async="true"></script><script async="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/beacon.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript" async="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ga.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript" async="" id="nsgpt-ldr-_g_pcmag_com_geocc_js" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/geocc.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/jquery.min.js.t&#7843;i xu&#7889;ng"></script>
+<script type="text/javascript">
+		jQuery.noConflict();
+		</script>
+<script type="text/javascript">
+		  //<![CDATA[
+		  function loginToggle() {
+			var target = document.getElementById("login").getElementsByTagName("div")[0];
+			!target.className.match(/ visible/) ? target.className += " visible" : target.className = target.className.replace(/ visible/, "");
+			}
+		  //]]>
+		</script>
+
+
+
+
+
+
+
+<script type="text/javascript" id="nsgpt" data-channel="general" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/dreamincode.net.js.t&#7843;i xu&#7889;ng" async="true"></script>
+ <script type="text/javascript"> jsDebug = 0; /* Must come before JS includes */ USE_RTE = 0; inACP = false; </script>
+<script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/prototype.js.t&#7843;i xu&#7889;ng"></script>
+<script data-cfasync="false" type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ipb.js.t&#7843;i xu&#7889;ng"></script>
+<script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/scriptaculous-cache.js.t&#7843;i xu&#7889;ng"></script>
+<script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ipb.lang.js.t&#7843;i xu&#7889;ng" charset="iso-8859-1"></script>
+<script type="text/javascript">
+	var isRTL	= false;
+	var rtlIe	= '';
+	var rtlFull	= '';
+</script>
+<script type="text/javascript">
+	//<![CDATA[
+		/* ---- URLs ---- */
+		ipb.vars['base_url'] 			= 'http://www.dreamincode.net/forums/index.php?s=02c2cb090c5eaeb412a45461bf3453f8&';
+		ipb.vars['board_url']			= 'http://www.dreamincode.net/forums';
+		ipb.vars['loading_img'] 		= '//dreamincode.net/forums/public/style_images/master/loading.gif';
+		ipb.vars['active_app']			= 'forums';
+		ipb.vars['upload_url']			= 'http://www.dreamincode.net/forums/uploads';
+		/* ---- Member ---- */
+		ipb.vars['member_id']			= parseInt( 0 ),
+		ipb.vars['is_supmod']			= parseInt( 0 ),
+		ipb.vars['is_admin']			= parseInt( 0 ),
+		ipb.vars['secure_hash'] 		= '880ea6a14ea49e853634fbdc5015a024';
+		ipb.vars['session_id']			= '02c2cb090c5eaeb412a45461bf3453f8';
+		ipb.vars['can_befriend']		= true;
+		/* ---- cookies ----- */
+		ipb.vars['cookie_id'] 			= 'dic_';
+		ipb.vars['cookie_domain'] 		= '.dreamincode.net';
+		ipb.vars['cookie_path']			= '/';
+		/* ---- Rate imgs ---- */
+		ipb.vars['rate_img_on']			= '//dreamincode.net/forums/public/style_images/master/bullet_star.png';
+		ipb.vars['rate_img_off']		= '//dreamincode.net/forums/public/style_images/master/bullet_star_off.png';
+		ipb.vars['rate_img_rated']		= '//dreamincode.net/forums/public/style_images/master/bullet_star_rated.png';
+		/* ---- Uploads ---- */
+		ipb.vars['swfupload_swf']		= 'http://www.dreamincode.net/forums/public/js/3rd_party/swfupload/swfupload.swf';
+		ipb.vars['swfupload_enabled']	= true;
+		ipb.vars['use_swf_upload']		= ( '' == 'flash' ) ? true : false;
+		ipb.vars['swfupload_debug']		= false; /* SKINNOTE: Turn off for production */
+		/* ---- other ---- */
+		ipb.vars['use_live_search'] 	= 0;
+		ipb.vars['live_search_limit'] 	= 4;
+		ipb.vars['highlight_color']		= "#ade57a";
+		ipb.vars['charset']				= "iso-8859-1";
+		ipb.vars['use_rte']				= 1;
+		ipb.vars['image_resize']		= 1;
+		ipb.vars['image_resize_force']  = 500;
+		ipb.vars['seo_enabled']			= 1;
+		
+		ipb.vars['seo_params']			= {"start":"-","end":"\/","varBlock":"\/page__","varSep":"__"};
+		
+		/* Templates/Language */
+		ipb.templates['ajax_loading'] 	= "<div id='ajax_loading'>" + ipb.lang['loading'] + "</div>";
+		ipb.templates['close_popup']	= "<img src='//dreamincode.net/forums/public/style_images/master/close_popup.png' alt='x' />";
+		ipb.templates['rss_shell']		= new Template("<ul id='rss_menu'>#{items}</ul>");
+		ipb.templates['rss_item']		= new Template("<li><a href='#{url}' title='#{title}'>#{title}</a></li>");
+		ipb.templates['resized_img']	= new Template("<span>Resized to #{percent}% (was #{width} x #{height}) - Click image to enlarge</span>");
+		ipb.templates['m_add_friend']	= new Template("<a href='http://www.dreamincode.net/forums/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=add&amp;member_id=#{id}&amp;s=02c2cb090c5eaeb412a45461bf3453f8' title='Add as Friend'><img src='//dreamincode.net/forums/public/style_images/master/user_add.png' alt='Add as Friend' /></a>");
+		ipb.templates['m_rem_friend']	= new Template("<a href='http://www.dreamincode.net/forums/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=remove&amp;member_id=#{id}&amp;s=02c2cb090c5eaeb412a45461bf3453f8' title='Remove Friend'><img src='//dreamincode.net/forums/public/style_images/master/user_delete.png' alt='Remove Friend' /></a>");
+		ipb.templates['autocomplete_wrap'] = new Template("<ul id='#{id}' class='ipb_autocomplete' style='width: 250px;'></ul>");
+		ipb.templates['autocomplete_item'] = new Template("<li id='#{id}'><img src='#{img}' alt='' width='#{img_w}' height='#{img_h}' />&nbsp;&nbsp;#{itemvalue}</li>");
+		ipb.templates['page_jump']		= new Template("<div id='#{id}_wrap' class='ipbmenu_content'><h3 class='bar'>Jump to page</h3><input type='text' class='input_text' id='#{id}_input' size='8' /> <input type='submit' value='Go' class='input_submit add_folder' id='#{id}_submit' /></div>");
+	//]]>
+	</script> <script type="text/javascript"> Loader.boot(); </script><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ips.quickpm.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ips.editor.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ips.topic.js.t&#7843;i xu&#7889;ng"></script> <style type="text/css"> pre { overflow: scroll; max-height:500px; background: white; border: 1px solid #66666; padding: 5px; } </style> <script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/pubads_impl_140.js.t&#7843;i xu&#7889;ng" async=""></script><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource"></script><script type="text/javascript" async="" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/a.min.js.t&#7843;i xu&#7889;ng"></script></head> 
+
+<body itemscope="" itemtype="http://schema.org/WebPage"><iframe src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/storageframe.html" id="LOCSTORAGE" scrolling="no" name="empty" hidden="true" style="width: 1px; height: 1px; position: absolute; top: -7px; left: -7px; border: 0px;"></iframe><iframe src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/storageframe(1).html" id="LOCSTORAGE" scrolling="no" name="empty" hidden="true" style="width: 1px; height: 1px; position: absolute; top: -7px; left: -7px; border: 0px;"></iframe>
+
+
+
+<div id="header">
+<h1 id="logo" style="width: 625px;"><a href="http://www.dreamincode.net/" rel="home"><img alt="&lt;/Dream.In.Code&gt;: Programming &amp; Web Development Community" width="264" height="110" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/logo_2012.gif"></a>
+
+
+</h1>
+
+<div style="height: 110px;">
+<div style="padding-top: 30px; padding-right: 10px; float: right;">
+<!-- google_ad_section_start(weight=ignore) -->
+
+<form style="margin: 0pt;" id="cse-search-box">
+<span style="float: left; font-size: 24px; padding-top: 5px; padding-right: 5px; color: white; font-weight: bolder; text-shadow: 1px 1px 1px rgb(0, 0, 0);">Search:</span>
+<input name="q" id="query" size="18" style="font-size: 20px; margin-top: 5px; border: 1px solid; border-radius: 5px; background: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif&quot;) left center no-repeat rgb(255, 255, 255);" value="" type="text">
+<input name="sa" value="Search" style="color: white; background: #303030; font-weight: bolder; border: 1px solid black; margin: 0px 0px 0px 5px; padding: 5px; -moz-border-radius: 5px 5px 5px 5px; border-radius: 5px 5px 5px 5px; position: relative; top: -3px;" type="submit">
+ </form>
+<script type="text/javascript">
+ 					var f = document.getElementById('cse-search-box');
+					var q = f.q;
+					    var b = function() {
+						  if (q.value == '') {
+							q.style.background = '#FFFFFF url(http:\x2F\x2Fwww.google.com\x2Fcse\x2Fintl\x2Fen\x2Fimages\x2Fgoogle_custom_search_watermark.gif) left no-repeat';
+						  }
+						};
+
+						var f = function() {
+						  q.style.background = '#ffffff';
+						};
+						window.onload = b;
+						q.onfocus = f;
+						q.onblur = b;
+
+					</script>
+<div style="text-align: right; clear: both;">
+<a href="http://www.dreamincode.net/forums/index.php?app=core&amp;module=search" style="text-decoration: none;"><span style="font-size: 11px; color: rgb(255, 255, 255); font-weight: bold; text-decoration: underline; text-align: right;">Advanced Forum Search</span></a>
+</div>
+
+</div>
+</div>
+<div id="navigation-login-register">
+<ul class="navigation">
+<li class="first"><a href="http://www.dreamincode.net/forums/">Forums</a></li>
+<li>
+<a href="http://www.dreamincode.net/forums/forum/76-programming-help/">Programming</a>
+</li>
+<li>
+<a href="http://www.dreamincode.net/forums/forum/74-web-development/">Web Development</a>
+</li>
+<li><a href="http://www.dreamincode.net/forums/forum/71-computer-support/">Computers</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/78-programming-tutorials/">Tutorials</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/205-snippets/">Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/?automodule=blog">Dev Blogs</a></li>
+<li><a href="http://jobs.dreamincode.net/">Jobs</a></li>
+<li class="last">
+<a rel="nofollow" href="http://www.dreamincode.net/forums/forum/1-caffeine-lounge/">Lounge</a>
+</li>
+</ul>
+
+<ul id="login-register">
+<li id="login"><a rel="nofollow" href="http://www.dreamincode.net/forums/index.php?app=core&amp;module=global&amp;section=login">Login</a></li>
+<li id="register"><a rel="nofollow" href="http://www.dreamincode.net/forums/index.php?app=core&amp;module=global&amp;section=register&amp;coppa_user=&amp;termsread=1&amp;coppa_pass=1&amp;agree_to_terms=1">Join!</a></li>
+<li id="todaystopics"><a href="http://www.dreamincode.net/forums/index.php?app=core&amp;module=search&amp;do=active">Today's Topics</a></li>
+</ul>
+
+</div>
+</div>
+<div id="div-gpt-ad-1326943007260-5" style="margin: 5px auto; width: 100%; min-height: 90px; text-align: center;">
+
+
+<div data-ns="billboard" data-pos="atf" id="nsgpt-billboard-1" data-google-query-id="CLHXko6Uv9UCFQYtjgodqgMMPA"><div id="google_ads_iframe_/4585/ns.dreamincode/general_4__container__" style="border: 0pt none; margin: auto; text-align: center; width: 728px; height: 90px;"><iframe frameborder="0" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/container.html" id="google_ads_iframe_/4585/ns.dreamincode/general_4" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+</div>
+<div style=" background: #FFF; margin: 0px auto; border-left: 1px solid #FFF;border-right: 1px solid #FFF;">
+
+  <div id="main_content"> <div id="content_hold" class="with_sidebar"> <div id="content_inner" class="content"> <div id="ipbwrapper"> <ul id="breadcrumb" itemprop="breadcrumb" class="left"> <li class="first"><a href="http://www.dreamincode.net/forums/index?s=02c2cb090c5eaeb412a45461bf3453f8">Dream.In.Code</a></li> <li><span class="nav_sep">&gt;</span> <a href="http://www.dreamincode.net/forums/forum/78-programming-tutorials/?s=02c2cb090c5eaeb412a45461bf3453f8" title="Return to Programming Tutorials">Programming Tutorials</a></li>
+<li><span class="nav_sep">&gt;</span> <a href="http://www.dreamincode.net/forums/forum/85-c%23-tutorials/?s=02c2cb090c5eaeb412a45461bf3453f8" title="Return to C# Tutorials">C# Tutorials</a></li>
+</ul><br> 
+
+
+
+ <div id="content" class="clear"> <a id="j_content"></a> 
+<script type="text/javascript">
+//<![CDATA[
+	ipb.topic.inSection = 'topicview';
+	ipb.topic.topic_id  = 164491;
+	ipb.topic.forum_id  = 85;
+	ipb.topic.start_id  = 0;
+	// Editor JS: Only needs to be done once per page
+	ipb.editor_values.get('templates')['link'] = new Template("<label for='#{id}_url'>URL</label><input type='text' class='input_text' id='#{id}_url' value='http://' tabindex='10' /><label for='#{id}_urltext'>Link text</label><input type='text' class='input_text _select' id='#{id}_urltext' value='My link' tabindex='11' /><input type='submit' class='input_submit' value='Insert Link' tabindex='12' />");
+ipb.editor_values.get('templates')['image'] = new Template("<label for='#{id}_img'>Image URL</label><input type='text' class='input_text' id='#{id}_img' value='http://' tabindex='10' /><input type='submit' class='input_submit' value='Insert Image' tabindex='11' />");
+ipb.editor_values.get('templates')['email'] = new Template("<label for='#{id}_email'>Email Address</label><input type='text' class='input_text' id='#{id}_email' tabindex='10' /><label for='#{id}_emailtext'>Link text</label><input type='text' class='input_text _select' id='#{id}_emailtext' value='Email me' tabindex='11' /><input type='submit' class='input_submit' value='Insert Email' tabindex='12' />");
+ipb.editor_values.get('templates')['media'] = new Template("<label for='#{id}_media'>Media URL</label><input type='text' class='input_text' id='#{id}_media' value='http://' tabindex='10' /><input type='submit' class='input_submit' value='Insert Media' tabindex='11' />");
+ipb.editor_values.get('templates')['generic'] = new Template("<div class='rte_title'>#{title}</div><strong>Example</strong><pre>#{example}</pre><label for='#{id}_option' class='optional'>#{option_text}</label><input type='text' class='input_text optional' id='#{id}_option' tabindex='10' /><label for='#{id}_text'>#{value_text}</label><input type='text' class='input_text _select' id='#{id}_text' tabindex='11' /><input type='submit' class='input_submit' value='Add' tabindex='12' />");
+ipb.editor_values.get('templates')['togglesource'] = new Template("<fieldset id='#{id}_ts_controls' class='submit' style='text-align: left'><input type='button' class='input_submit' value='Update' id='#{id}_ts_update' />&nbsp;&nbsp;&nbsp; <a href='#' id='#{id}_ts_cancel' class='cancel'>Cancel Source Edit</a></fieldset>");
+	
+ipb.editor_values.get('templates')['toolbar'] = new Template("<ul id='#{id}_toolbar_#{toolbarid}' class='toolbar' style='display: none'>#{content}</ul>");
+ipb.editor_values.get('templates')['button'] = new Template("<li><span id='#{id}_cmd_custom_#{cmd}' class='rte_control rte_button specialitem' title='#{title}'><img src='//dreamincode.net/forums/public/style_images/master/rte_icons/#{img}' alt='Icon' /></span></li>");
+ipb.editor_values.get('templates')['menu_item'] = new Template("<li id='#{id}_cmd_custom_#{cmd}' class='specialitem clickable'>#{title}</li>");
+ipb.editor_values.get('templates')['togglesource'] = new Template("<fieldset id='#{id}_ts_controls' class='submit' style='text-align: left'><input type='button' class='input_submit' value='Update' id='#{id}_ts_update' />&nbsp;&nbsp;&nbsp; <a href='#' id='#{id}_ts_cancel' class='cancel'>Cancel Source Edit</a></fieldset>");
+ipb.editor_values.get('templates')['emoticons_showall'] = new Template("<input class='input_submit emoticons' type='button' id='#{id}_all_emoticons' value='Show all emoticons' />");
+ipb.editor_values.get('templates')['emoticon_wrapper'] = new Template("<h4><span>Emoticons</span></h4><div id='#{id}_emoticon_holder' class='emoticon_holder'></div>");
+
+// Add smilies into the mix
+ipb.editor_values.set( 'show_emoticon_link', false );
+
+ipb.editor_values.set( 'bbcodes', $H({"snapback":{"id":"1","title":"Post Snap Back","desc":"This tag displays a little linked image which links back to a post - used when quoting posts from the board. Opens in same window by default.","tag":"snapback","useoption":"0","example":"[snapback]100[/snapback]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"topic":{"id":"5","title":"Topic Link","desc":"This tag provides an easy way to link to a topic","tag":"topic","useoption":"1","example":"[topic=1]Click me![/topic]","switch_option":"0","menu_option_text":"Enter the topic ID","menu_content_text":"Enter the title for this link","single_tag":"0","optional_option":"0","image":""},"post":{"id":"6","title":"Post Link","desc":"This tag provides an easy way to link to a post.","tag":"post","useoption":"1","example":"[post=1]Click me![/post]","switch_option":"0","menu_option_text":"Enter the Post ID","menu_content_text":"Enter the title for this link","single_tag":"0","optional_option":"0","image":""},"spoiler":{"id":"7","title":"Spoiler","desc":"Spoiler tag","tag":"spoiler","useoption":"0","example":"[spoiler]Some hidden text[/spoiler]","switch_option":"0","menu_option_text":"","menu_content_text":"Enter the text to be masked","single_tag":"0","optional_option":"0","image":""},"acronym":{"id":"8","title":"Acronym","desc":"Allows you to make an acronym that will display a description when moused over","tag":"acronym","useoption":"1","example":"[acronym='Laugh Out Loud']lol[/acronym]","switch_option":"0","menu_option_text":"Enter the description for this acronym (EG: Laugh Out Loud)","menu_content_text":"Enter the acronym (EG: lol)","single_tag":"0","optional_option":"0","image":""},"hr":{"id":"12","title":"Horizontal Rule","desc":"Adds a horizontal rule to separate text","tag":"hr","useoption":"0","example":"[hr]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"1","optional_option":"0","image":""},"php":{"id":"14","title":"PHP Code","desc":"Allows you to enter PHP code into a formatted/highlighted syntax box","tag":"php","useoption":"0","example":"[php]$variable = true;\n\nprint_r($variable);[/php]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"html":{"id":"15","title":"HTML Code","desc":"Allows you to enter formatted/syntax-highlighted HTML code","tag":"html","useoption":"0","example":"[html]<body>\n <div class='outer'>\n  <p>Hello World</p>\n </div>\n</body>[/html]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"sql":{"id":"16","title":"SQL Code","desc":"Allows you to enter formatted/syntax-highlighted SQL code","tag":"sql","useoption":"0","example":"[sql]SELECT p.*, t.* FROM posts p LEFT JOIN topics t ON t.tid=p.topic_id WHERE t.tid=7[/sql]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"xml":{"id":"17","title":"XML Code","desc":"Allows you to enter formatted/syntax-highlighted XML code","tag":"xml","useoption":"0","example":"[xml]<outer>\n <inner>\n  <tag param='1'>Test</tag>\n </inner>\n</outer>[/xml]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"member":{"id":"31","title":"Member","desc":"Given a member name, a link is automatically generated to the member's profile","tag":"member","useoption":"1","example":"[member=skyhawk133] runs this site.","switch_option":"0","menu_option_text":"Input Username of Member","menu_content_text":"","single_tag":"1","optional_option":"0","image":"memberbbcode.png"},"extract":{"id":"33","title":"Extract Blog Entry","desc":"This will allow users to define an extract for an entry. Only this piece of the entry will be displayed on the main blog page and will show up in the RSS feed.","tag":"extract","useoption":"0","example":"[extract]This is an example![/extract]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"blog":{"id":"34","title":"Blog Link","desc":"This tag provides an easy way to link to a blog.","tag":"blog","useoption":"1","example":"[blog=100]Click me![/blog]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"entry":{"id":"35","title":"Blog Entry Link","desc":"This tag provides an easy way to link to a blog entry.","tag":"entry","useoption":"1","example":"[entry=100]Click me![/entry]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"twitter":{"id":"36","title":"Twitter","desc":"A tag to link to a user's twitter account","tag":"twitter","useoption":"0","example":"[twitter]userName[/twitter]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":"twitter.png"},"inline":{"id":"37","title":"Inline Code","desc":"Formats code inline instead of in a seperate code box. ","tag":"inline","useoption":"0","example":"[inline]style=\"font-size: 12px;\"[/inline]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"il":{"id":"38","title":"Abbreviated Inline (IL)","desc":"Abbreviated version of the [inline] tag. ","tag":"il","useoption":"0","example":"[il]Code Here[/il]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":"il2.png"},"code":{"id":"41","title":"Code","desc":"Allows you to enter general code","tag":"code","useoption":"1","example":"[code]$text = 'Some long code here';[/code]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"1","image":""}}) );
+	ipb.vars['emoticon_url'] = "//dreamincode.net/forums/public/style_emoticons/default";
+	//Search Setup
+	ipb.vars['search_type']			= 'forum';
+	ipb.vars['search_type_id']		= 85;
+	ipb.vars['search_type_2']		= 'topic';
+	ipb.vars['search_type_id_2']	= 164491;
+//]]>
+</script>
+<div class="topic_controls">
+<span class="pagination no_pages left">Page 1 of 1</span>
+</div>
+<div class="topic hfeed">
+<h2 class="maintitle">
+<span class="main_topic_title">
+<a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/?s=02c2cb090c5eaeb412a45461bf3453f8" style="text-decoration: none;">Working with the Windows Recycle Bin with C#</a>
+</span>
+
+</h2>
+
+
+
+<div class="post_block hentry clear  with_rep" id="post_id_971464">
+<a id="entry971464"></a>
+<div class="post_wrap">
+<h3>
+<span class="post_id">
+<a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/page__view__findpost__p__971464?s=02c2cb090c5eaeb412a45461bf3453f8" rel="bookmark" title="Link to post #1">#1</a>
+</span>
+<span class="author vcard">
+<a class="url fn" href="http://www.dreamincode.net/forums/user/40184-psychocoder/?s=02c2cb090c5eaeb412a45461bf3453f8">PsychoCoder</a>
+&nbsp;<a href="http://www.dreamincode.net/forums/user/40184-psychocoder/page__f__85?s=02c2cb090c5eaeb412a45461bf3453f8" class="__user __id40184 __fid85" title="View Profile"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+<img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+</span>
+</h3>
+<div class="author_info">
+
+<ul class="user_details">
+<li class="avatar"><a href="http://www.dreamincode.net/forums/user/40184-psychocoder/?s=02c2cb090c5eaeb412a45461bf3453f8" title="View Profile"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/av-40184.png" width="64" height="49" alt=""></a></li>
+<li class="title">Google.Sucks.Init(true);</li>
+<li class="group_icon">
+<img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/alumni_group.gif" alt="member icon">
+</li>
+</ul>
+<br>
+<div class="reputation positive">
+<span class="number">Reputation: 1658</span>
+</div>
+<div style="margin: 0 auto;">
+<ul class="user_controls clear">
+<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&amp;module=display&amp;section=blog&amp;mid=40184&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="View blog"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+</ul>
+</div>
+<ul class="user_fields">
+<li>
+<span class="ft">Posts:</span>
+<span class="fc">19,853</span>
+</li>
+<li>
+<span class="ft">Joined:</span>
+<span class="fc">26-July 07</span>
+</li>
+</ul>
+
+</div>
+<div class="post_body">
+
+<p class="posted_info">
+Posted <abbr class="published" title="2010-03-27T00:01:28+00:00">26 March 2010 - 05:01 PM</abbr>
+</p>
+<div class="post entry-content" id="">
+Recently I needed to interact with the Windows Recycle Bin for a utilities application I've been asked to create for a client, and from step 1 I knew I was in for a surprise. Since the recycle bin doesn't exactly <em class="bbc">exist</em>, meaning it's a virtual folder and doesn't have an actual location, getting information from it turned out to be more of a task than initially thought.<br>
+<br>
+I initially thought of Win32 to accomplish this but kept running into a dead end. Now I'm sure that buried somewhere deep in the Win32 API list is one that will do what I was looking for, but after a couple days of trial and error I abandoned that idea and started looking at different options. What I came up with was using the Shell32.dll (located in %%WinDir%%/System32) and was able to come up with what I was looking for. And that is the premise on this short series on working with the Windows Recycle Bin.<br>
+<br>
+In this series we will look at some functionality the Shell32.dll gives you for working with the Windows Recycle Bin. In this first entry we will look at how we can do 2 things:<br>
+<br>
+<ul class="bbcol decimal"><li> List all the files in the Recycle Bin<br></li><li> Display the size of each item</li></ul><br>
+<br>
+To get you started open Visual Studio 2008 and create a new console application (these examples will be using a console application to begin with, when we get to other functionality we will switch to using a WinForms application, and you'll see why when we get there), don't worry when we are done you will be able to simply move our class file to the Windows application, so no need to rewrite everything we're currently working on.<br>
+<br>
+Once you have your console application created add a new class (I named mine <strong class="bbc">RecycleBin.cs</strong> oddly enough), then go to <strong class="bbc">Project</strong> &gt; <strong class="bbc">Add Reference</strong>. Once the dialog opens click the <strong class="bbc">Browse</strong> tab and navigate to your Windows directory (for me it's <span class="inlinecode">C:\Windows\Sytem32</span>, I'm running Windows 7 Ultimate), scroll down and select <strong class="bbc">Shell32.dll</strong> and click <strong class="bbc">OK</strong>. We now had added our DLL, now we need to add our <span class="inlinecode">using</span> statement, so add this to the top of your class<br>
+<br>
+<div id="highlighter_760916" class="syntaxhighlighter  "><div class="bar     "><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_760916_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_760916" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="keyword">using</code> <code class="plain">Shell32;</code></td></tr></tbody></table></div></div></div><br>
+<br>
+To make things simpler on us let's create a class (do it inside the class you just created), I know this isn't the 100% best way to organize your code but it's ok in my opinion. Let's call this class <strong class="bbc">RecycleBinItem</strong>, so for now your <strong class="bbc">RecycleBin</strong> class should look like this<br>
+<br>
+<div id="highlighter_193492" class="syntaxhighlighter  "><div class="bar                                                            "><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_193492_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_193492" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="keyword">using</code> <code class="plain">System;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="keyword">using</code> <code class="plain">System.Collections.Generic;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="keyword">using</code> <code class="plain">System.Text;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="keyword">using</code> <code class="plain">Shell32;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="keyword">using</code> <code class="plain">System.Runtime.InteropServices;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="keyword">namespace</code> <code class="plain">RecycleBinSample</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">class</code> <code class="plain">RecycleBinItem</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">string</code> <code class="plain">FileName { </code><code class="keyword">get</code><code class="plain">; </code><code class="keyword">set</code><code class="plain">; }</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">string</code> <code class="plain">FileType { </code><code class="keyword">get</code><code class="plain">; </code><code class="keyword">set</code><code class="plain">; }</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">string</code> <code class="plain">FileSize { </code><code class="keyword">get</code><code class="plain">; </code><code class="keyword">set</code><code class="plain">; }</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code> <code class="keyword">class</code> <code class="plain">RecycleBin</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>18</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>19</code></td><td class="content"><code class="plain">}</code></td></tr></tbody></table></div></div></div><br>
+<br>
+The <strong class="bbc">RecycleBinItem</strong> will be used in conjunction with Generics to hold the items in our recycle bin. Ok, first let's working on getting all the items in our recycle bin into a generic list of type <strong class="bbc">RecycleBinItem</strong>. To do this we're going to use some of the items available to us in the Shell32.dll:<br>
+<br>
+<ul class="bbc"><li> <a href="https://msdn.microsoft.com/en-us/library/bb787868%28VS.85%29.aspx" class="bbc_url" title="External link" rel="external">Folder</a>: Represents a Shell folder. This object contains properties and methods that allow you to retrieve information about the folder. <br></li><li> <a href="https://msdn.microsoft.com/en-us/library/bb774085%28VS.85%29.aspx" class="bbc_url" title="External link" rel="external">Namespace</a>: Creates and returns a Folder object for the specified folder. (In this case we're passing 10, which is the Recycle Bin)<br></li><li> <a href="https://msdn.microsoft.com/en-us/library/bb787810%28VS.85%29.aspx" class="bbc_url" title="External link" rel="external">FolderItem</a>: Represents an item in a Shell folder. This object contains properties and methods that allow you to retrieve information about the item.<br></li><li> <a href="https://msdn.microsoft.com/en-us/library/bb787792%28VS.85%29.aspx" class="bbc_url" title="External link" rel="external">FolderItem2</a>: Extends the <a href="https://msdn.microsoft.com/en-us/library/bb787800%28VS.85%29.aspx" class="bbc_url" title="External link" rel="external">FolderItems</a> object</li></ul><br>
+<br>
+So, first let's take a look at listing everything in our Recycle Bin, this simple method does just that<br>
+<br>
+<div id="highlighter_704377" class="syntaxhighlighter  "><div class="bar                                                                                                                                                                      "><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_704377_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_704377" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="keyword">public</code> <code class="plain">List&lt;RecycleBinItem&gt; GetRecycleBinItems()</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">try</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//create a new isntance of the Shell32 interface</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Shell shell = </code><code class="keyword">new</code> <code class="plain">Shell();</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">List&lt;RecycleBinItem&gt; list = </code><code class="keyword">new</code> <code class="plain">List&lt;RecycleBinItem&gt;();</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//create a folder item to our Recycle Bin</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Folder recycleBin = shell.NameSpace(10);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//now let's loop through all the Items in our Folder object</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//and add them to a generic list</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">foreach</code> <code class="plain">(FolderItem2 f </code><code class="keyword">in</code> <code class="plain">recycleBin.Items())</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">list.Add(</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">new</code> <code class="plain">RecycleBinItem</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>18</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">FileName = f.Name,</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>19</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">FileType = f.Type,</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>20</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">FileSize = GetSize(f).ToString()</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>21</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">});</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>22</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>23</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//release</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>24</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Marshal.FinalReleaseComObject(shell);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>25</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>26</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//return the list</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>27</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">list;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>28</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>29</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">catch</code> <code class="plain">(Exception ex)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>30</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>31</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.WriteLine(</code><code class="keyword">string</code><code class="plain">.Format(</code><code class="string">"Error accessing the Recycle Bin: {0}"</code><code class="plain">, ex.Message));</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>32</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="keyword">null</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>33</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>34</code></td><td class="content"><code class="plain">}</code></td></tr></tbody></table></div></div></div><br>
+<br>
+Now isn't that simple? Took me several days to realize that I was over-complicating this, and was ready to pull my hair out. That gives us a list of the files in our bin, the file name and what type of file it is (text file, XML file, etc), but as you can imagine we're not finished yet. The other task I said we would be covering was getting the size of each item in the Recycle Bin. For this we need to know something, is the item a folder ot just a file (this determines how we calculate size). If it's not a folder we simply return it's size, whereas if it's a folder we need to get into the folder and get the size of everything in it, returning the overall size of the folder.<br>
+<br>
+We will do this with recursion like so<br>
+<br>
+<div id="highlighter_288104" class="syntaxhighlighter  "><div class="bar                                      "><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_288104_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_288104" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="keyword">public</code> <code class="keyword">double</code> <code class="plain">GetSize(FolderItem folderItem)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//check if it's a folder, if it's not then return it's size</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">if</code> <code class="plain">(!folderItem.IsFolder)</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">(</code><code class="keyword">double</code><code class="plain">)folderItem.Size;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//create a new Shell32.Folder item</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Folder folder = (Folder)folderItem.GetFolder;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">double</code> <code class="plain">size = 0;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//since we're here we're dealing with a folder, so now we will loop</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//through everything in it and get it's size, thus calculating the</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//overall size of the folder</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">foreach</code> <code class="plain">(FolderItem2 f </code><code class="keyword">in</code> <code class="plain">folder.Items())</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">size += GetSize(f);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>18</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//return the size</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>19</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">size;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>20</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>21</code></td><td class="content"><code class="plain">}</code></td></tr></tbody></table></div></div></div><br>
+<br>
+Now that we have this in place we can alter our <strong class="bbc">GetRecycleBinItems</strong> method to add the size to our list. The altered version looks like this<br>
+<br>
+<div id="highlighter_13236" class="syntaxhighlighter  "><div class="bar                                                 "><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_13236_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_13236" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="keyword">public</code> <code class="plain">List&lt;RecycleBinItem&gt; GetRecycleBinItems()</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">try</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//create a new isntance of the Shell32 interface</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Shell shell = </code><code class="keyword">new</code> <code class="plain">Shell();</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">List&lt;RecycleBinItem&gt; list = </code><code class="keyword">new</code> <code class="plain">List&lt;RecycleBinItem&gt;();</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//create a folder item to our Recycle Bin</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Folder recycleBin = shell.NameSpace(10);</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//now let's loop through all the Items in our Folder object</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//and add them to a generic list</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">foreach</code> <code class="plain">(FolderItem2 f </code><code class="keyword">in</code> <code class="plain">recycleBin.Items())</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">list.Add(</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">new</code> <code class="plain">RecycleBinItem</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>18</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">FileName = f.Name,</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>19</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">FileType = f.Type,</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>20</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">FileSize = GetSize(f).ToString()</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>21</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">});</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>22</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//return the list</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>23</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">list;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>24</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>25</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">catch</code> <code class="plain">(Exception ex)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>26</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>27</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.WriteLine(</code><code class="keyword">string</code><code class="plain">.Format(</code><code class="string">"Error accessing the Recycle Bin: {0}"</code><code class="plain">, ex.Message));</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>28</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="keyword">null</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>29</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>30</code></td><td class="content"><code class="plain">}</code></td></tr></tbody></table></div></div></div><br>
+<br>
+Ahh, now we have a list of everything currently in our Recycle Bin so now let's display it and see if it's correct. To do this we simply loop through our list and write it to the console like this<br>
+<br>
+<div id="highlighter_430517" class="syntaxhighlighter  "><div class="bar       "><div class="toolbar"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_430517_clipboard" type="application/x-shockwave-flash" title="copy to clipboard" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_430517" menu="false" src="http://cdn.dreamincode.net/syntax/scripts/clipboard.swf"></div><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="keyword">static</code> <code class="keyword">void</code> <code class="plain">Main(</code><code class="keyword">string</code><code class="plain">[] args)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="plain">{</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">RecycleBin bin = </code><code class="keyword">new</code> <code class="plain">RecycleBin();</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.WriteLine(</code><code class="string">"Items In Recycle Bin"</code><code class="plain">);</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//now loop through our list</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">foreach</code> <code class="plain">(RecycleBinItem item </code><code class="keyword">in</code> <code class="plain">bin.GetRecycleBinItems())</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.WriteLine(</code><code class="keyword">string</code><code class="plain">.Format(</code><code class="string">"File: {0} =&gt; Size: {1} =&gt; Type: {2}"</code><code class="plain">, item.FileName, item.FileSize, item.FileType));</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Console.ReadLine();</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content"><code class="plain">}</code></td></tr></tbody></table></div></div></div><br>
+<br>
+And that should show you each file in your Recycle Bin, it's size and it's file type. Now I know it's a crude display and you can format it however you wish. This was just to show how to do it.<br>
+<br>
+And there you have it, a way to show how to list everything in your Recycle Bin. Much easier than you initially thought isn't it? Be honest, because I know when I went down this path I thought it would be a lot harder as well.<br>
+<br>
+Well that's the end of Part I, in Part II we will look at restoring a file in the Recycle Bin to it's original location, and emptying your Recycle Bin, so stay tuned and thanks for reading <img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/smile.gif" class="bbc_emoticon" alt=":)">
+<br>
+</div>
+<div id="div-gpt-ad-1326943007260-1" style="padding-left: 15px;">
+
+<script type="text/javascript">
+//<![CDATA[
+ord = window.ord || Math.floor(Math.random()*1E16);
+document.write('<script type="text/javascript" src="http://ad2.netshelter.net/adj/ns.dreamincode/general;ppos=btf;kw=;tile=2;sz=300x250;ord=' + ord + '?"><\/script>');
+//]]>
+</script><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/general"></script>
+<noscript>&lt;a href="http://ad2.netshelter.net/jump/ns.dreamincode/general;ppos=btf;kw=;tile=2;sz=300x250;ord=123456789?" target="_blank" &gt;&lt;img src="http://ad2.netshelter.net/ad/ns.dreamincode/general;ppos=btf;kw=;tile=2;sz=300x250;ord=123456789?" border="0" alt="" /&gt;&lt;/a&gt;</noscript>
+
+</div>
+<br>
+</div>
+<div class="rep_bar clear right" id="rep_post_971464"><span style="float: left; margin-top: 10px; font-weight: bold;">
+Is This A Good Question/Topic?
+</span>
+<span class="reputation positive rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 971464 );">
+3
+</span>
+
+<ul>
+<li><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#" class="rep_up" title="Vote this post up"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/add.png" alt="+"></a></li>
+</ul>
+</div>
+<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_971464', { app: 'forums', type: 'pid', typeid: '971464' }, parseInt('3') );
+				</script>
+<ul class="post_controls">
+<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#top" class="top" title="Back to top">Back to top</a></li>
+<li class="multiquote" id="multiq_971464">
+<a href="http://www.dreamincode.net/forums/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=85&amp;t=164491&amp;qpid=971464&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="Quote this post with Multi-Quote"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+</li>
+<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=85&amp;t=164491&amp;qpid=971464&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="Reply directly to this post"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+
+</ul>
+<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_971464').show();
+					
+					if( $('toggle_post_971464') )
+					{
+						$('toggle_post_971464').show();
+					}
+				</script>
+</div>
+
+</div>
+<hr>
+<h2 class="maintitle">
+Replies To: Working with the Windows Recycle Bin with C#
+</h2>
+
+<div class="post_block hentry clear  with_rep" id="post_id_972293">
+<a id="entry972293"></a>
+<div class="post_wrap">
+<h3>
+<span class="post_id">
+<a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/page__view__findpost__p__972293?s=02c2cb090c5eaeb412a45461bf3453f8" rel="bookmark" title="Link to post #2">#2</a>
+</span>
+<span class="author vcard">
+<a class="url fn" href="http://www.dreamincode.net/forums/user/170484-xmpp/?s=02c2cb090c5eaeb412a45461bf3453f8">X@MPP</a>
+&nbsp;<a href="http://www.dreamincode.net/forums/user/170484-xmpp/page__f__85?s=02c2cb090c5eaeb412a45461bf3453f8" class="__user __id170484 __fid85" title="View Profile"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+<img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+</span>
+</h3>
+<div class="author_info">
+
+<ul class="user_details">
+<li class="avatar"><a href="http://www.dreamincode.net/forums/user/170484-xmpp/?s=02c2cb090c5eaeb412a45461bf3453f8" title="View Profile"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/av-170484.jpg" width="64" height="64" alt=""></a></li>
+<li class="title">&#20693;&#12399;&#39340;&#40575;&#12391;&#12377;&#12397;?</li>
+<li class="group_icon">
+<img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/premiumauthor_group.gif" alt="member icon"><br> <img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/post-69417-13430787110388.png">
+</li>
+</ul>
+<br>
+<div class="reputation positive">
+<span class="number">Reputation: 36</span>
+</div>
+<div style="margin: 0 auto;">
+<ul class="user_controls clear">
+<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&amp;module=display&amp;section=blog&amp;mid=170484&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="View blog"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+</ul>
+</div>
+<ul class="user_fields">
+<li>
+<span class="ft">Posts:</span>
+<span class="fc">1,018</span>
+</li>
+<li>
+<span class="ft">Joined:</span>
+<span class="fc">20-February 09</span>
+</li>
+</ul>
+
+</div>
+<div class="post_body">
+
+<p class="posted_info">
+Posted <abbr class="published" title="2010-03-28T04:43:26+00:00">27 March 2010 - 09:43 PM</abbr>
+</p>
+<div class="post entry-content" id="">
+nice <img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/smile.gif" class="bbc_emoticon" alt=":)"> looks useful
+<br>
+</div>
+</div>
+<div class="rep_bar clear right" id="rep_post_972293"><span style="float: left; margin-top: 10px; font-weight: bold;">
+Was This Post Helpful?
+</span>
+<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 972293 );">
+0
+</span>
+
+<ul>
+<li><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#" class="rep_up" title="Vote this post up"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/add.png" alt="+"></a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#" class="rep_down" title="Vote this post down"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/delete.png" alt="-"></a></li>
+</ul>
+</div>
+<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_972293', { app: 'forums', type: 'pid', typeid: '972293' }, parseInt('0') );
+				</script>
+<ul class="post_controls">
+<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#top" class="top" title="Back to top">Back to top</a></li>
+<li class="multiquote" id="multiq_972293">
+<a href="http://www.dreamincode.net/forums/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=85&amp;t=164491&amp;qpid=972293&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="Quote this post with Multi-Quote"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+</li>
+<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=85&amp;t=164491&amp;qpid=972293&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="Reply directly to this post"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+
+</ul>
+<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_972293').show();
+					
+					if( $('toggle_post_972293') )
+					{
+						$('toggle_post_972293').show();
+					}
+				</script>
+</div>
+
+</div>
+<hr>
+
+<div class="post_block hentry clear  with_rep" id="post_id_974642">
+<a id="entry974642"></a>
+<div class="post_wrap">
+<h3 class="guest">
+<span class="post_id">
+<a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/page__view__findpost__p__974642?s=02c2cb090c5eaeb412a45461bf3453f8" rel="bookmark" title="Link to post #3">#3</a>
+</span>
+Guest_VB.Terry*
+</h3>
+<div class="author_info">
+
+<ul class="user_details">
+<li class="avatar"></li>
+</ul>
+<br>
+<div class="reputation zero">
+<span class="number">Reputation: </span>
+</div>
+<div style="margin: 0 auto;">
+<ul class="user_controls clear">
+</ul>
+</div>
+<ul class="user_fields">
+</ul>
+
+</div>
+<div class="post_body">
+
+<p class="posted_info">
+Posted <abbr class="published" title="2010-03-30T17:09:06+00:00">30 March 2010 - 10:09 AM</abbr>
+</p>
+<div class="post entry-content" id="">
+May I convert the code and make a tutorial in vb.net. I would give you full credit since you made the original tutorial.
+<br>
+</div>
+</div>
+<div class="rep_bar clear right" id="rep_post_974642"><span style="float: left; margin-top: 10px; font-weight: bold;">
+Was This Post Helpful?
+</span>
+<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 974642 );">
+0
+</span>
+
+</div>
+<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_974642', { app: 'forums', type: 'pid', typeid: '974642' }, parseInt('0') );
+				</script>
+<ul class="post_controls">
+<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#top" class="top" title="Back to top">Back to top</a></li>
+<li class="multiquote" id="multiq_974642">
+<a href="http://www.dreamincode.net/forums/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=85&amp;t=164491&amp;qpid=974642&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="Quote this post with Multi-Quote"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+</li>
+<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=85&amp;t=164491&amp;qpid=974642&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="Reply directly to this post"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+
+</ul>
+<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_974642').show();
+					
+					if( $('toggle_post_974642') )
+					{
+						$('toggle_post_974642').show();
+					}
+				</script>
+</div>
+
+</div>
+<hr>
+
+<div class="post_block hentry clear  with_rep" id="post_id_1421488">
+<a id="entry1421488"></a>
+<div class="post_wrap">
+<h3>
+<span class="post_id">
+<a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/page__view__findpost__p__1421488?s=02c2cb090c5eaeb412a45461bf3453f8" rel="bookmark" title="Link to post #4">#4</a>
+</span>
+<span class="author vcard">
+<a class="url fn" href="http://www.dreamincode.net/forums/user/540701-tenware/?s=02c2cb090c5eaeb412a45461bf3453f8">TENware</a>
+&nbsp;<a href="http://www.dreamincode.net/forums/user/540701-tenware/page__f__85?s=02c2cb090c5eaeb412a45461bf3453f8" class="__user __id540701 __fid85" title="View Profile"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/user_popup.png" alt="Icon"></a>
+<img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/user_off.png" alt="User is offline" title="User is offline">
+</span>
+</h3>
+<div class="author_info">
+
+<ul class="user_details">
+<li class="avatar"><a href="http://www.dreamincode.net/forums/user/540701-tenware/?s=02c2cb090c5eaeb412a45461bf3453f8" title="View Profile"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/78c27b613820f3c468be1b6bafc37cd3" alt=""></a></li>
+<li class="title">New D.I.C Head</li>
+</ul>
+<br>
+<div class="reputation negative">
+<span class="number">Reputation: -1</span>
+</div>
+<div style="margin: 0 auto;">
+<ul class="user_controls clear">
+<li><a href="http://www.dreamincode.net/forums/index.php?app=blog&amp;module=display&amp;section=blog&amp;mid=540701&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="View blog"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/book_open.png" alt="View blog"></a></li>
+</ul>
+</div>
+<ul class="user_fields">
+<li>
+<span class="ft">Posts:</span>
+<span class="fc">2</span>
+</li>
+<li>
+<span class="ft">Joined:</span>
+<span class="fc">27-August 11</span>
+</li>
+</ul>
+
+</div>
+<div class="post_body">
+
+<p class="posted_info">
+Posted <abbr class="published" title="2011-08-27T18:59:33+00:00">27 August 2011 - 11:59 AM</abbr>
+</p>
+<div class="post entry-content" id="">
+Nice work!<br>
+I have, however, discovered a problem with the GetSize() function, or more correctly the Shell functions/methods/properties.<br>
+<br>
+folderItem.IsFolder returns false even if the item is a folder<br>
+(Type = "File Folder").<br>
+Since the type is "File Folder", folderItem.Size returns 0.<br>
+<br>
+You can use the shell32.dll API SHQueryRecycleBin() to get the number of items and total size (in bytes)<br>
+see:<br>
+<a href="http://www.pinvoke.net/default.aspx/shell32/SHQueryRecycleBin.html" class="bbc_url" title="External link" rel="external">http://www.pinvoke.n...RecycleBin.html</a>
+<br>
+</div>
+</div>
+<div class="rep_bar clear right" id="rep_post_1421488"><span style="float: left; margin-top: 10px; font-weight: bold;">
+Was This Post Helpful?
+</span>
+<span class="reputation zero rep_show clickable" title="Reputation" onclick="ipb.topic.repPopUp( this, 1421488 );">
+0
+</span>
+
+<ul>
+<li><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#" class="rep_up" title="Vote this post up"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/add.png" alt="+"></a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#" class="rep_down" title="Vote this post down"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/delete.png" alt="-"></a></li>
+</ul>
+</div>
+<script type="text/javascript">
+					ipb.global.registerReputation( 'rep_post_1421488', { app: 'forums', type: 'pid', typeid: '1421488' }, parseInt('0') );
+				</script>
+<ul class="post_controls">
+<li class="top hide"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#top" class="top" title="Back to top">Back to top</a></li>
+<li class="multiquote" id="multiq_1421488">
+<a href="http://www.dreamincode.net/forums/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=85&amp;t=164491&amp;qpid=1421488&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="Quote this post with Multi-Quote"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/comment_add.png" alt="Reply Icon"> MultiQuote</a>
+</li>
+<li><a href="http://www.dreamincode.net/forums/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=85&amp;t=164491&amp;qpid=1421488&amp;s=02c2cb090c5eaeb412a45461bf3453f8" title="Reply directly to this post"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/comment_add.png" alt="Reply Icon"> Quote + Reply</a></li>
+
+</ul>
+<script type="text/javascript">
+					// Show multiquote for JS browsers
+					$('multiq_1421488').show();
+					
+					if( $('toggle_post_1421488') )
+					{
+						$('toggle_post_1421488').show();
+					}
+				</script>
+</div>
+
+</div>
+<hr>
+
+
+
+<ul class="topic_jump right clear">
+<li class="previous"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/page__view__old?s=02c2cb090c5eaeb412a45461bf3453f8">&#8592; Previous Topic</a></li>
+<li><strong><a href="http://www.dreamincode.net/forums/forum/85-c%23-tutorials/?s=02c2cb090c5eaeb412a45461bf3453f8" title="Return to C# Tutorials">C# Tutorials</a></strong></li>
+<li class="next"><a href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/page__view__new?s=02c2cb090c5eaeb412a45461bf3453f8">Next Topic &#8594;</a></li>
+</ul>
+
+<div class="topic_controls clear">
+<span class="pagination no_pages left">Page 1 of 1</span>
+</div>
+
+
+
+</div>
+ <br class="clear"> </div> 
+
+<table align="center" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center" valign="top">
+<div data-ns="largerectangle" data-pos="btf"></div>
+
+</td>
+<td align="left" valign="top" width="100%">
+<div id="related" style="margin-top: -25px;">
+Query failed: unknown local index 'forums_search_posts_main' in search request.
+</div>
+</td>
+</tr>
+</tbody></table>
+
+ <script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/lightbox.js.t&#7843;i xu&#7889;ng"></script>
+<script type="text/javascript">
+//<![CDATA[
+	// Lightbox Configuration
+	LightboxOptions = Object.extend({
+	    fileLoadingImage:        '//dreamincode.net/forums/public/style_images/master/lightbox/loading.gif',     
+	    fileBottomNavCloseImage: '//dreamincode.net/forums/public/style_images/master/lightbox/closelabel.gif',
+	    overlayOpacity: 0.8,   // controls transparency of shadow overlay
+	    animate: true,         // toggles resizing animations
+	    resizeSpeed: 7,        // controls the speed of the image resizing animations (1=slowest and 10=fastest)
+	    borderSize: 10,         //if you adjust the padding in the CSS, you will need to update this variable
+		// When grouping images this is used to write: Image # of #.
+		// Change it for non-english localization
+		labelImage: "Image",
+		labelOf: "of"
+	}, window.LightboxOptions || {});
+/* Watch for a lightbox image and set up our downloadbutton watcher */
+document.observe('click', (function(event){
+    var target = event.findElement('a[rel^=lightbox]') || event.findElement('area[rel^=lightbox]');
+    if (target) {
+        event.stop();
+        gbl_addDownloadButton();
+    }
+}).bind(this));
+var _to    = '';
+var _last  = '';
+function gbl_addDownloadButton()
+{
+	if ( typeof( ipsLightbox.lightboxImage ) != 'undefined' && ipsLightbox.lightboxImage.src )
+	{
+		if ( _last != ipsLightbox.lightboxImage.src )
+		{
+			if ( ! $('gbl_d') )
+			{
+				$('bottomNav').insert( { top: "<div id='gbl_d' style='text-align:right;padding-bottom:4px;'></div>" } );
+			}
+			
+			$('gbl_d').update( "<a href='"+ ipsLightbox.lightboxImage.src + "' target='_blank'><img src='//dreamincode.net/forums/public/style_images/master/lightbox/download-icon.png' /></a>" );
+			
+			_last = ipsLightbox.lightboxImage.src;
+		}
+	}
+	
+	/* Check for init and then keep checking for new image */
+	_to = setTimeout( "gbl_addDownloadButton()", 1000 );
+}
+//]]>
+</script> </div> </div> </div> 
+<div id="sidebar">
+<div style="margin-left: 35px; padding-top: 10px; text-align: center;">
+<a href="http://www.dreamincode.net/forums/index.php?app=core&amp;module=global&amp;section=register&amp;coppa_user=&amp;termsread=1&amp;coppa_pass=1&amp;agree_to_terms=1"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ask_a_question_336.png"></a>
+<br>
+
+<div id="div-gpt-ad-1326943007260-2" style="width: 300px; margin-left: 25px;">
+
+
+<div data-ns="portrait" data-pos="atf"></div>
+</div>
+</div>
+<div id="sidebar_inner">
+<div class="column1">
+<!-- google_ad_section_start(weight=ignore) -->
+<div class="navigation">
+<h2><a href="http://www.dreamincode.net/forums/forum/72-general-discussion/">General Discussion</a></h2>
+<ul class="navigation">
+<li><a href="http://www.dreamincode.net/forums/forum/1-caffeine-lounge/" title="This is our off-topic forum for discussions related to non-programming topics including: sports, current events, games, music, movies, food, drink, TV, geek related (toys &amp; technology), debates, life events, rants, and occasionally religion and politics. ">Caffeine Lounge</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/93-corner-cubicle/" title="Off-Topic discussion of IT related topics. This is the forum for professionals and those interested in serious discussion of topics related to the world of IT. It all happens here in the corner cubicle. ">Corner Cubicle</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/110-student-campus/" title="A forum just for students. Talk about colleges, classes, resources for students, homework, and other topics related to life in school. ">Student Campus</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/82-software-development/" title="Discuss topics related to developing software. Including architecture, design patterns, documentation, software industry, and other non-language specific programming topics. ">Software Development</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/83-industry-news/" title="A place for topics that announce various news from the web/software development industry (product release announcements, updates, new services etc.)">Industry News</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/65-introduce-yourself/" title="A place where you can introduce yourself to the community and greet other new members.">Introduce Yourself</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/201-nightmareincode/" title="*NEW* - Post the worst code you come across and have a good laugh. Because sometimes your code dreams, are really code nightmares. ">Nightmare.In.Code</a></li>
+</ul>
+<h2><a href="http://www.dreamincode.net/forums/forum/76-programming-help/">Programming Help</a></h2>
+<ul class="navigation">
+<li><a href="http://www.dreamincode.net/forums/forum/15-c-and-c/" title="Expert programming help for C, and C++! Ask questions about homework assignments, or any other C/C++ related problems. C++ is a great language when beginning programming. ">C and C++</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/67-vbnet/" title="Ask questions about Microsoft&#39;s VB.NET programming language.">VB.NET</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/32-java/" title="Post your Java questions in here. We&#39;re happy to help with homework assignments, work projects, or any other java related questions. Java is common when beginning computer programming.">Java</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/84-c/" title="Object Oriented Programming at its finest. Encompassing power with ease of use, C# has become one of the top programming languages of the new age.">C#</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/29-python/" title="">Python</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/28-php/" title="Having some PHP problems? Need some help with a few functions? This is the place to ask! ">PHP</a></li>
+ <li><a href="http://www.dreamincode.net/forums/forum/109-mobile-development/" title="Discuss developing applications for mobile phones. Including Android, iPhone, and other mobile platforms. ">Mobile Development</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/30-aspnet/" title="Having some problems with ASP.NET programming? Pop in here and ask your question!">ASP.NET</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/142-net-framework/" title="">.NET Framework</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/70-ruby/" title="This up-and-coming language is easy to learn, fast to develop, and very powerful. Get help with the Ruby on Rails framework or any other Ruby questions you have!">Ruby</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/69-game-development/" title="Get help with anything game development related. Programming, 3D Engines, Art, Design and Math etc.">Game Development</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/112-assembly/" title="Topics related to assembly language programming. ">Assembly</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/14-databases/" title="mySQL, PostgreSQL, Access, SQL, and Oracle... you&#39;ve got a database question... we&#39;ve got database answers!">Databases</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/31-coldfusion/" title="It&#39;s the other white meat... a rapid application development language that will have you hooked in no time! From cfoutput to components, we can help you out!">ColdFusion</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/21-vb6/" title="Our Visual Basic experts are happy to help with homework assignments, commercial applications, or any other VB question you may have! Visual Basic is good to learn programming. ">VB6</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/62-other-languages/" title="Discuss languages that don&#39;t have a specific forum. Including COBOL, Fortran, ADA, Basic, etc. ">Other Languages</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/126-52-weeks-of-code/" title="">52 Weeks Of Code</a></li>
+</ul>
+<h2><a href="http://www.dreamincode.net/forums/forum/74-web-development/">Web Development</a></h2>
+<ul class="navigation">
+<li><a href="http://www.dreamincode.net/forums/forum/63-web-development/" title="Discuss anything that doesn&#39;t fit in the other web development forums.">Web Development</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/4-html-css/" title="Have questions about HTML, XHTML, CSS? We&#39;ll get you headed in the right direction! ">HTML &amp; CSS</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/90-javascript/" title="JavaScript and AJAX, it&#39;s what Web 2.0 is all about. Post your JavaScript related questions here!">JavaScript</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/3-graphic-design/" title="Photoshop and Corel gurus come on in! Can&#39;t figure out how to do that cool effect? Have some questions or cool web images you&#39;ve made? Post em&#39; here">Graphic Design</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/8-flash-actionscript/" title="Let our Flash and ActionScript experts answer your questions. From simple tweens to advanced flash remoting, we&#39;re happy to help!">Flash &amp; ActionScript</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/89-blogging/" title="Wordpress, Blogger, Plugins, Themes, Skins, Pay Per Post, and anything else related to the Blogging industry. ">Blogging</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/59-seo-advertising/" title="Advertising, SEO, AdSense, AdWords, Link Trades, and more! Now that you&#39;ve created your website, you&#39;ve gotta drive traffic to it. Discuss current trends and techniques here. ">SEO &amp; Advertising</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/88-web-servers-hosting/" title="Apache, IIS, Shared Hosting, Dedicated Hosting, Colocation. We&#39;ll make sure you get your site online and keep it online!">Web Servers &amp; Hosting</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/5-site-check/" title="Post your web site to be reviewed by fellow dream.in.code members. ">Site Check</a></li>
+</ul>
+
+<div id="div-gpt-ad-1326943007260-0" style="width:160px; height:600px;">
+
+<div data-ns="skyscraper"></div>
+</div>
+<br>
+</div>
+<!-- google_ad_section_end -->
+</div><div class="column2">
+
+<div class="tutorials" style="margin-top: -15px;">
+<h2>Follow &amp; Share</h2>
+
+<script type="text/javascript">
+window.___gcfg = {lang: 'en'};
+(function() 
+{var po = document.createElement("script");
+po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(po, s);
+})();</script>
+
+<div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 170px; height: 85px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 170px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 85px;" tabindex="0" vspace="0" width="100%" id="I0_1501903983764" name="I0_1501903983764" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/badge.html" data-gapiattached="true" title="+Badge"></iframe></div><br>
+<a href="http://www.dreamincode.net/rss/featured.php" rel="alternate"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/feed-icon32x32.png" alt="Dream.In.Code RSS Feed" style="border:0; margin: 2px;" width="32" height="32"></a>
+<a href="https://www.linkedin.com/e/gis/1506187" rel="alternate"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/linkedin-icon32x32.png" alt="Dream.In.Code LinkedIn Group" style="border:0; margin: 2px;" width="32" height="32"></a>
+<a href="https://www.twitter.com/dreamincode" rel="alternate"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/twitter-icon32x32.png" alt="Follow Us On Twitter" style="border:0; margin: 2px;" width="32" height="32"></a>
+<a href="https://www.facebook.com/pages/DreamInCode/62219401412" rel="alternate"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/facebook.png" alt="Fan Us On Facebook" style="border:0; margin: 2px;" width="32" height="32"></a>
+
+<p><a href="https://feeds.feedburner.com/dic_featured"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/dic_featured" height="26" width="88" style="border:0; margin-top: 2px; margin-left: 3px;" alt=""></a></p>
+<!-- google_ad_section_end -->
+
+
+<h2><a href="http://www.dreamincode.net/forums/showforum85.htm">C# Tutorials</a></h2>
+<ul>
+<li><a href="http://www.dreamincode.net/forums/topic/396550-intro-to-particle-swarm-optimization/">Intro to Particle Swarm Optimization</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/394253-the-observer-pattern-and-coroutines/">The Observer pattern and Coroutines.</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/392030-simple-tutorial-exploring-interfaces/">Simple tutorial: Exploring interfaces.</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/387943-stored-procedure-input-output-return-value/">Stored Procedure (Input, Output, Return Value)</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/384373-10-common-programming-mistakes/">10 Common Programming Mistakes</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/383231-singly-linked-list-a-basic-example/">Singly-Linked List, A Basic Example</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/377124-c#-methods/">C# Methods</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/373318-drawing-shapes-and-strings/">Drawing Shapes and Strings</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/360545-quick-look-at-streamwriting-and-uploading-using-ftp/">Quick look at StreamWriting and Uploading using FTP</a></li>
+<li><a href="http://www.dreamincode.net/forums/topic/359758-obtaining-database-schema-information/">Obtaining Database Schema Information</a></li>
+<li><a href="http://www.dreamincode.net/forums/showforum85.htm"><strong>262 More C# Tutorials...</strong></a></li> </ul>
+<h2>Reference Sheets</h2>
+<a href="http://www.dreamincode.net/forums/showtopic17947.htm"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/refsheets5.png" height="157" width="151"></a>
+<h2><a href="http://www.dreamincode.net/code">Code Snippets</a></h2>
+<ul>
+<li><a href="http://www.dreamincode.net/forums/forum/206-c-snippets/" title="">C Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/208-c-snippets/" title="">C++ Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/209-java-snippets/" title="">Java Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/210-visual-basic-snippets/" title="For VB6 and older versions. Please post VB.NET Snippets in the VB.NET Snippets section.">Visual Basic Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/211-c#-snippets/" title="">C# Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/212-vbnet-snippets/" title="">VB.NET Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/227-aspnet-snippets/" title="">ASP.NET Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/213-php-snippets/" title="">PHP Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/214-python-snippets/" title="">Python Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/215-ruby-snippets/" title="">Ruby Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/216-coldfusion-snippets/" title="">ColdFusion Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/217-sql-snippets/" title="">SQL Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/218-assembly-snippets/" title="">Assembly Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/219-functional-programming-snippets/" title="For functional languages such as Lisp, Clojure, Scheme, Erlang, Haskell, OCaml, F#, and others.">Functional Programming Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/220-perl-snippets/" title="">Perl Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/221-htmlcss-snippets/" title="">HTML/CSS Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/222-jvscript-snippets/" title="">Javascript Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/223-flashactionscript-snippets/" title="">Flash/ActionScript Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/226-asp-snippets/" title="Classic ASP Code Snippets">ASP Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/229-linux-unix-and-bash-snippets/" title="">Linux, Unix, and Bash Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/224-other-languages-snippets/" title="For languages without individualized snippets sections">Other Languages Snippets</a></li>
+<li><a href="http://www.dreamincode.net/forums/forum/228-regex/" title="">Regex</a></li>
+</ul>
+<!-- google_ad_section_start(weight=ignore) -->
+<h2><a rel="nofollow" href="http://www.dreamincode.net/?p=chat">DIC Chatroom</a></h2>
+<ul><li><a rel="nofollow" href="http://www.dreamincode.net/?p=chat">Join our IRC Chat</a></li></ul>
+<h2>Bye Bye Ads</h2>
+<a rel="nofollow" href="http://www.dreamincode.net/forums/index.php?act=paysubs&amp;CODE=index"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/dicpp.gif" width="141" height="32"></a>
+
+<!-- google_ad_section_end -->
+</div>
+</div>
+<div style="padding-left: 50px; position: relative; clear: both;">
+<iframe src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/likebox.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:287px;" allowtransparency="true"></iframe>
+</div>
+</div> 
+</div> 
+ </div> <div id="footer"> 
+<!-- google_ad_section_start(weight=ignore) -->
+<br><br>
+<div align="center">
+<strong><a href="http://www.dreamincode.net/forums/index.php?showannouncement=22">FAQ</a> | <a href="http://www.dreamincode.net/forums/blog/1081-dreamincode-team-blog/">Team Blog</a> | <a href="http://www.dreamincode.net/forums/forum/106-site-questions-support/">Feedback/Support</a> | <a href="http://www.dreamincode.net/downloads/MediaKit.pdf" rel="nofollow">Advertising</a><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/pdf.gif" border="0" valign="middle"> | <a href="http://www.dreamincode.net/?p=tos" rel="nofollow">Terms of Use</a> | <a href="http://www.dreamincode.net/?p=privacy" rel="nofollow">Privacy Policy</a> | <a href="http://www.dreamincode.net/?p=about" rel="nofollow">About Us</a>
+</strong></div><strong>
+<br>
+<br>
+<div align="center">Copyright 2001-2017 <a href="http://www.mediagroup1.com/" rel="nofollow"><b>MediaGroup1 LLC</b></a>, All Rights Reserved<br>A <a href="http://www.mediagroup1.com/" rel="nofollow"><b>MediaGroup1 LLC</b></a> Production - Version 6.0.2.1.36<br>Server: secure3</div>
+</strong></div><strong>
+<script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/thickbox.js.t&#7843;i xu&#7889;ng"></script>
+<script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/jsapi"></script>
+<script type="text/javascript">
+google.load('search', '1',{nocss: true});
+jQuery(document).ready(function() {
+	jQuery("#cse-search-box").submit(function () {
+	var customSearchControl = new google.search.CustomSearchControl('000872085005376217422:zamd_7elal4');
+	customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+	tb_show("Dream.In.Code Search Results - Powered By <img src='http://www.google.com/cse/images/google_custom_search_smwide.gif'>", "#TB_inline?height=480&width=800");
+	var drawOptions = new google.search.DrawOptions();
+	customSearchControl.draw(document.getElementById("TB_ajaxContent"), drawOptions);
+	customSearchControl.execute(document.getElementById("query").value);
+	return false;
+	});
+});
+</script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(1)" type="text/javascript"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/default+vi.I.js.t&#7843;i xu&#7889;ng" type="text/javascript"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69851-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+_qoptions={
+qacct:"p-d4Szpdj6xMw-o"
+};
+</script>
+<script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/quant.js.t&#7843;i xu&#7889;ng"></script>
+<noscript>
+&lt;img src="http://pixel.quantserve.com/pixel/p-d4Szpdj6xMw-o.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/&gt;
+</noscript>
+
+<script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(2)" type="text/javascript"></script>
+
+<script type="text/javascript">
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script'); 
+        _dma.type = 'text/javascript';
+        _dma.async = true; 
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+<script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/dreamincode.net.js(1).t&#7843;i xu&#7889;ng"></script><script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ga.js.t&#7843;i xu&#7889;ng" type="text/javascript"></script><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/beacon.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/v60.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript">var pvar = { cid: "ziffdavis", content: "0", server: "secure-us" };var trac = nol_t(pvar);trac.record().post();</script><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/dreamincode.net-incl.js.t&#7843;i xu&#7889;ng"></script><script type="text/javascript">try { var ns_pageTracker = _gat._getTracker("UA-25910482-47"); ns_pageTracker._trackPageview(); } catch(err) {} </script><script type="text/javascript">COMSCORE.beacon({c1:2,c2:6036316,c3:"",c4:"",c5:"",c6:"",c15:""});</script>
+<!-- google_ad_section_end -->
+<div align="center">
+</div>
+ </strong></div><script src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/walker-min.js.t&#7843;i xu&#7889;ng"></script><iframe src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource.html" name="__bkframe" height="0" width="0" style="display: none; position: absolute; clip: rect(0px 0px 0px 0px);"></iframe><iframe id="_zd_iframe" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/iframe.html" style="display: none;"></iframe><div id="nsgpt-oop-footer" class="nsgpt-oop" data-ns="oop" style="position: absolute; left: 0px; bottom: 0px;" data-google-query-id="CPyqj46Uv9UCFQfSjgodtAQGjQ"><div id="google_ads_iframe_/4585/ns.dreamincode/general_0__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/4585/ns.dreamincode/general_0" title="3rd party ad content" name="google_ads_iframe_/4585/ns.dreamincode/general_0" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(3).html"></iframe></div></div><div id="nsgpt-oop-stitials" class="nsgpt-oop" data-ns="oop" style="position: absolute; left: 0px; bottom: 0px;" data-google-query-id="CP2qj46Uv9UCFQfSjgodtAQGjQ"><div id="google_ads_iframe_/4585/ns.dreamincode/general_1__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/4585/ns.dreamincode/general_1" title="3rd party ad content" name="google_ads_iframe_/4585/ns.dreamincode/general_1" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(4).html"></iframe></div></div><div id="nsgpt-oop-inpage" class="nsgpt-oop" data-ns="oop" style="position: absolute; left: 0px; bottom: 0px;" data-google-query-id="CP6qj46Uv9UCFQfSjgodtAQGjQ"><div id="google_ads_iframe_/4585/ns.dreamincode/general_2__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/4585/ns.dreamincode/general_2" title="3rd party ad content" name="google_ads_iframe_/4585/ns.dreamincode/general_2" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(5).html"></iframe></div></div><div id="nsgpt-oop-skin" class="nsgpt-oop" data-ns="oop" style="position: absolute; left: 0px; bottom: 0px;" data-google-query-id="CP-qj46Uv9UCFQfSjgodtAQGjQ"><div id="google_ads_iframe_/4585/ns.dreamincode/general_3__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/4585/ns.dreamincode/general_3" title="3rd party ad content" name="google_ads_iframe_/4585/ns.dreamincode/general_3" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(6).html"></iframe></div></div><iframe src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/ls.html" height="0" width="0" id="lsframe" style="display: none;"></iframe><iframe id="google_osd_static_frame_1174448855548" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(7).html"></iframe><img name="control_pixel" id="control_pixel" border="0" width="1" height="1" src="http://amch.questionmarket.com/adsc/d921388/100/1017295/adscout.php?ord=1501903983934"><iframe name="oauth2relay554063632" id="oauth2relay554063632" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe name="__bkframe" height="0" width="0" frameborder="0" style="display:none;position:absolute;clip:rect(0px 0px 0px 0px)" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(8).html"></iframe><script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/bk-coretag.js.t&#7843;i xu&#7889;ng"></script><strong> <script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/shCore.js.t&#7843;i xu&#7889;ng"></script> <script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/shBrushBash.js.t&#7843;i xu&#7889;ng"></script> <script type="text/javascript"> jQuery(function(){ jQuery('pre').removeClass('brush: bash').addClass('brush: csharp'); }); </script> <script type="text/javascript" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/shBrushCSharp.js.t&#7843;i xu&#7889;ng"></script> <link type="text/css" rel="stylesheet" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/shCore.css"> <link type="text/css" rel="stylesheet" href="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/shThemeDefault.css"> <script type="text/javascript"> SyntaxHighlighter.config.clipboardSwf = 'http://cdn.dreamincode.net/syntax/scripts/clipboard.swf'; SyntaxHighlighter.all(); </script>  </strong><div id="overlay" style="display: none;"></div><div id="lightbox" style="display: none;"><div id="outerImageContainer" style="width: 250px; height: 250px;"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#"></a><a id="nextLink" href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#"></a></div><div id="loading"><a id="loadingLink" href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="http://www.dreamincode.net/forums/topic/164491-working-with-the-windows-recycle-bin-with-c%23/#"><img src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/closelabel.gif"></a></div></div></div></div><iframe width="1" height="1" src="./Working With The Windows Recycle Bin With C# - C# Tutorials _ Dream.In.Code_files/saved_resource(9).html" id="DMGlobalUserIdetifierIFRAME" name="DMGlobalUserIdetifierIFRAME" style="display: none;"></iframe></body></html>

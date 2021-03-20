@@ -1,0 +1,8 @@
+public static void DisableCDBurningDFeatures()
+        {
+            key = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer", true);
+            if (key == null)
+                key = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer");
+            key.SetValue("NoCDBurning", 00000001, RegistryValueKind.DWord);
+            key.Close();
+        }

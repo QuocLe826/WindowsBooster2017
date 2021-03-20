@@ -1,0 +1,5 @@
+public void Use_Win_Classic_Themes()
+        {
+            Process.Start("sc.exe", "stop Themes");
+            Process.Start("sc.exe", "config Themes" start= disabled");
+        }
